@@ -7,11 +7,25 @@ and this project adheres to [Calendar Versioning](https://calver.org/) of
 the following form: YYYY.0M.0D.
 
 
-## [2026.10.24] 
+## [2026.10.24]
 
 ### Added
 - Designed a music sorter component
 
+
+## [2026.10.27]
+
+### Added
+- Created 4 files
+  - The Music Sorter
+  - Music Sorter Kernel
+  - Standard
+
+### Updated
+- MusicPlaylistKernel:
+  - Added length()
+  - enqueueSong()
+  - dequeueSong()
 
 
 ## [2026.01.07]

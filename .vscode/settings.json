@@ -1,5 +1,5 @@
 {
-    "better-todo-tree.general.showActivityBarBadge": true,
+    "better-todo-tree.general.showActivityBarBadge": false,
     "better-todo-tree.tree.showCountsInTree": true,
     "chat.disableAIFeatures": false,
     "code-runner.showRunIconInEditorTitleMenu": false,
