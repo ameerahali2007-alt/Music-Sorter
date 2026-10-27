@@ -6,20 +6,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Calendar Versioning](https://calver.org/) of
 the following form: YYYY.0M.0D.
 
-## [Unreleased]
 
-- Fixed an issue where the course URLs dropped the `web-sw1` paths
-
-## [2026.07.06]
+## [2026.10.24] 
 
 ### Added
+- Designed a music sorter component
 
-- Added an AGENTS.md file
-- Added simplified DIRECTIONS.md file
 
-### Removed
-
-- Removed TODO tree extension and replaced with fork
 
 ## [2026.01.07]
 
