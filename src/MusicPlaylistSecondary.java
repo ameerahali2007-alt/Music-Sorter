@@ -11,9 +11,11 @@ public abstract class MusicPlaylistSecondary implements MusicPlaylist<T> {
         assert s != null : "Violation of: s is not null";
         assert s != this : "Violation of: s is not this";
 
-        // TODO - fill in body
-
-        while (s.length() >= 0) {
+        while (s.length() > 1) {
+            T song = s.dequeueSong();
+            //recursively flip the list
+            //this.flipList();
+            this.enqueueSong(song);
         }
 
     }
