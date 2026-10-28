@@ -30,7 +30,7 @@ public abstract class MusicPlaylistSecondary implements MusicPlaylist {
         assert s != this : "Violation of: s is not this";
 
         // TODO - fill in body
-
+        return s.dequeueSong();
     }
 
     @Override
@@ -46,6 +46,10 @@ public abstract class MusicPlaylistSecondary implements MusicPlaylist {
         assert x != null : "Violation of: x is not null";
 
         // TODO - fill in body
+
+        T oldFront = this.dequeueSong();
+        this.enqueueSong(x);
+        return oldFront;
 
     }
 
