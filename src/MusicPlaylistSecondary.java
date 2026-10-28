@@ -1,19 +1,13 @@
 import java.util.Comparator;
 
-/**
- * Layered implementations of secondary methods {@code flip}, {@code front},
- * {@code rotate} {@code replaceFront}, {@code front}
- *
- * for {@code MusicPlaylist}.
- *
- * @param <T>
- *            type of {@code Set} elements
- */
-public final class MusicPlaylistSecondary<T> extends MusicPlaylist<T> {
+public abstract class MusicPlaylistSecondary implements MusicPlaylist {
 
     /**
+     *
      * No-argument constructor.
+     *
      */
+
     public MusicPlaylistSecondary() {
         super();
     }
@@ -24,6 +18,9 @@ public final class MusicPlaylistSecondary<T> extends MusicPlaylist<T> {
         assert s != this : "Violation of: s is not this";
 
         // TODO - fill in body
+
+        while (s.length() >= 0) {
+        }
 
     }
 
