@@ -28,6 +28,16 @@ the following form: YYYY.0M.0D.
   - dequeueSong()
 
 
+## [2026.10.28]
+
+### Added
+- Music Playlist Secondary file
+- Added to the Secondary:
+  - Flip
+  - Front
+  - Sort
+  - replaceFront
+
 
 ## [2026.01.07]
 
