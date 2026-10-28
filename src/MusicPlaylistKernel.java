@@ -36,7 +36,7 @@ public interface MusicPlaylistKernel<T>
      * @return the entry removed
      * @updates this
      * @requires {@code this /= <>}
-     * @ensures {@code #this = <dequeue> * this}
+     * @ensures {@code #this = <dequeueSong> * this}
      */
 
     T dequeueSong();
