@@ -1,16 +1,6 @@
 import java.util.Comparator;
 
-public abstract class MusicPlaylistSecondary implements MusicPlaylist {
-
-    /**
-     *
-     * No-argument constructor.
-     *
-     */
-
-    public MusicPlaylistSecondary() {
-        super();
-    }
+public abstract class MusicPlaylistSecondary implements MusicPlaylist<T> {
 
     @Override
     public void flipList(MusicPlaylist<T> s) {
@@ -25,11 +15,10 @@ public abstract class MusicPlaylistSecondary implements MusicPlaylist {
     }
 
     @Override
-    public MusicPlaylist<T> frontOfList(MusicPlaylist<T> s) {
+    MusicPlaylist<T> frontOfList(MusicPlaylist<T> s) {
         assert s != null : "Violation of: s is not null";
         assert s != this : "Violation of: s is not this";
 
-        // TODO - fill in body
         return s.dequeueSong();
     }
 
@@ -37,15 +26,29 @@ public abstract class MusicPlaylistSecondary implements MusicPlaylist {
     public void sort(Comparator<T> order) {
         assert order != null : "Violation of: order is not null";
 
-        // TODO - fill in body
+        MusicPlaylist1<T> sorted = this.newInstance();
+        while (this.length() > 0) {
+            T min = this.dequeueSong();
+
+            for (int i = 0; i < sorted.length() - 1; i++) {
+                //removing the new front
+                T compareMin = sorted.dequeueSong();
+                if (order.compare(min, compareMin) < 0) {
+                    this.enqueueSong(min);
+                    min = compareMin;
+                } else {
+                    this.enqueueSong(compareMin);
+                }
+                this.transferFrom(sorted);
+            }
+
+        }
 
     }
 
     @Override
-    public MusicPlaylist<T> replaceFront(T x) {
+    public MusicPlaylist1<T> replaceFront(T x) {
         assert x != null : "Violation of: x is not null";
-
-        // TODO - fill in body
 
         T oldFront = this.dequeueSong();
         this.enqueueSong(x);

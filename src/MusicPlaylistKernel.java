@@ -16,7 +16,7 @@ import components.standard.Standard;
  */
 
 public interface MusicPlaylistKernel<T>
-        extends Standard<MusicPlaylist<T>>, Iterable<T> {
+        extends Standard<MusicPlaylist1<T>>, Iterable<T> {
 
     /**
      * Adds {@code x} to the end of {@code this}.

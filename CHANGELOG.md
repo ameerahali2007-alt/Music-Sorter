@@ -38,6 +38,14 @@ the following form: YYYY.0M.0D.
   - Sort
   - replaceFront
 
+### Updated
+- Updated code inside Front, replaceFront, and Sort
+- Adding the methods to the Standard
+
+## Fixed
+- Fixed the code in Secondary
+- Renaming files (standard = MusicPlaylist)
+
 
 ## [2026.01.07]
 
