@@ -18,7 +18,7 @@ public interface MusicPlaylist<T> extends MusicPlaylistKernel<T> {
     /**
      *
      * @param s
-     * @return
+     * @return T
      */
     MusicPlaylist<T> frontOfList(MusicPlaylist<T> s);
 
@@ -31,7 +31,7 @@ public interface MusicPlaylist<T> extends MusicPlaylistKernel<T> {
     /**
      *
      * @param x
-     * @return
+     * @return T
      */
     MusicPlaylist1<T> replaceFront(T x);
 

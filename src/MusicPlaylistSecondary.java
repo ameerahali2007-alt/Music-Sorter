@@ -1,5 +1,9 @@
 import java.util.Comparator;
 
+/**
+ *
+ * MusicPlaylistSecondary.
+ */
 public abstract class MusicPlaylistSecondary implements MusicPlaylist<T> {
 
     @Override
@@ -26,7 +30,7 @@ public abstract class MusicPlaylistSecondary implements MusicPlaylist<T> {
     public void sort(Comparator<T> order) {
         assert order != null : "Violation of: order is not null";
 
-        MusicPlaylist1<T> sorted = this.newInstance();
+        MusicPlaylist<T> sorted = this.newInstance();
         while (this.length() > 0) {
             T min = this.dequeueSong();
 
@@ -47,7 +51,7 @@ public abstract class MusicPlaylistSecondary implements MusicPlaylist<T> {
     }
 
     @Override
-    public MusicPlaylist1<T> replaceFront(T x) {
+    public MusicPlaylist<T> replaceFront(T x) {
         assert x != null : "Violation of: x is not null";
 
         T oldFront = this.dequeueSong();
