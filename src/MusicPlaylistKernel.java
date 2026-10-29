@@ -4,7 +4,7 @@ import components.standard.Standard;
  * First-in-first-out (FIFO) Music Playlist Kernel component with primary
  * methods. (Note: by package-wide convention, all references are non-null.)
  *
- * @param <T>
+ * @param Song
  *            type of {@code MusicPlaylistKernel} entries
  * @mathmodel type MusicPlaylistKernel is modeled by string of T
  * @initially {@code
