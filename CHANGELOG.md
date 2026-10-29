@@ -46,6 +46,19 @@ the following form: YYYY.0M.0D.
 - Fixed the code in Secondary
 - Renaming files (standard = MusicPlaylist)
 
+## [2026.10.28]
+
+## Added
+- MusicPlaylist1:
+  - enqueueSong
+  - dequeueSong
+  - length
+  - clear
+  - MusicPlaylist
+
+- Created a Song object, stores title and artist.
+
+
 
 ## [2026.01.07]
 

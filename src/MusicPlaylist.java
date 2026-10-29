@@ -4,9 +4,8 @@ import java.util.Comparator;
  *
  * MusicPlaylistStandard.
  *
- * @param <T>
  */
-public interface MusicPlaylist<T> extends MusicPlaylistKernel<T> {
+public interface MusicPlaylist extends MusicPlaylistKernel {
 
     /**
      * Flips the order of the songs in the given playlist.
@@ -19,19 +18,19 @@ public interface MusicPlaylist<T> extends MusicPlaylistKernel<T> {
      * @param s
      * @return T
      */
-    MusicPlaylist<T> frontOfList(MusicPlaylist<T> s);
+    Song frontOfList(MusicPlaylist s);
 
     /**
      *
      * @param order
      */
-    void sort(Comparator<T> order);
+    void sort(Comparator<Song> order);
 
     /**
      *
      * @param x
      * @return T
      */
-    MusicPlaylist1<T> replaceFront(T x);
+    Song replaceFront(Song x);
 
 }

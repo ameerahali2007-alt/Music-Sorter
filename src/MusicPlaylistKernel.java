@@ -15,8 +15,8 @@ import components.standard.Standard;
  * @iterator ~this.seen * ~this.unseen = this
  */
 
-public interface MusicPlaylistKernel<T>
-        extends Standard<MusicPlaylist1<T>>, Iterable<T> {
+public interface MusicPlaylistKernel
+        extends Standard<MusicPlaylist>, Iterable<Song> {
 
     /**
      * Adds {@code x} to the end of {@code this}.
@@ -28,7 +28,7 @@ public interface MusicPlaylistKernel<T>
      * @ensures {@code this = #this * <x>}
      */
 
-    void enqueueSong(T x);
+    void enqueueSong(Song x);
 
     /**
      * Removes and returns the entry at the front of {@code this}.
@@ -39,7 +39,7 @@ public interface MusicPlaylistKernel<T>
      * @ensures {@code #this = <dequeueSong> * this}
      */
 
-    T dequeueSong();
+    Song dequeueSong();
 
     /**
      * Reports length of {@code this}.
