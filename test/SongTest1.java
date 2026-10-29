@@ -1,3 +1,3 @@
-public class SongTest {
+public class SongTest1 {
 
 }
