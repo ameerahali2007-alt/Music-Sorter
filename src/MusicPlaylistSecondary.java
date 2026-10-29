@@ -7,14 +7,12 @@ import java.util.Comparator;
 public abstract class MusicPlaylistSecondary implements MusicPlaylist<T> {
 
     @Override
-    public void flipList(MusicPlaylist<T> s) {
-        assert s != null : "Violation of: s is not null";
-        assert s != this : "Violation of: s is not this";
+    public void flipList() {
 
-        while (s.length() > 1) {
-            T song = s.dequeueSong();
+        while (this.length() > 1) {
+            T song = this.dequeueSong();
             //recursively flip the list
-            //this.flipList();
+            this.flipList();
             this.enqueueSong(song);
         }
 
@@ -61,5 +59,7 @@ public abstract class MusicPlaylistSecondary implements MusicPlaylist<T> {
         return oldFront;
 
     }
+
+    //Think about Rotate.
 
 }

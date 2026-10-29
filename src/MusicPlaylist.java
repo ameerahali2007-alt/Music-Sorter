@@ -11,9 +11,8 @@ public interface MusicPlaylist<T> extends MusicPlaylistKernel<T> {
     /**
      * Flips the order of the songs in the given playlist.
      *
-     * @param s
      */
-    void flipList(MusicPlaylist<T> s);
+    void flipList();
 
     /**
      *
