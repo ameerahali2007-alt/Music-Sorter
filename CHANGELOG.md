@@ -58,6 +58,7 @@ the following form: YYYY.0M.0D.
 
 - Created a Song object, stores title and artist.
 
+- Created a new test file.
 
 
 ## [2026.01.07]
