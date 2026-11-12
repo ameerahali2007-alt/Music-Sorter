@@ -7,6 +7,20 @@ import java.util.Iterator;
  */
 public class MusicPlaylist1 extends MusicPlaylistSecondary {
 
+    /**
+     * Creates a new instance of MusicPlaylist1.
+     */
+    public MusicPlaylist1(Song song) {
+        //TODO Auto-generated constructor stub
+    }
+
+    /**
+     * Creates a new instance of MusicPlaylist1.
+     */
+    public MusicPlaylist1(Song dripAteez, Song wonderlandAteez) {
+        //TODO Auto-generated constructor stub
+    }
+
     @Override
     public final void enqueueSong(Song x) {
         // TODO Auto-generated method stub

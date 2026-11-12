@@ -9,15 +9,24 @@ import org.junit.Test;
  */
 public class SongTest1 {
 
-@Test
-public void enqueueSongTest1() {
-    MusicPlaylist1 ateezPlaylist = new MusicPlaylist1();
-    Song dripAteez = new Song("Drip", "Ateez");
-    ateezPlaylist.enqueueSong(dripAteez);
+    /**
+     * Constructor for SongTest1.
+     */
+    public MusicPlaylist1(Song song) {
 
+    }
 
-    MusicPlaylist1 expected = new MusicPlaylist1(new Song("Drip", "Ateez");
-    assertEquals(expected, ateezPlaylist);
+    @Test
+    public void enqueueSongTest1() {
+        Song dripAteez = new Song("Drip", "Ateez");
+        MusicPlaylist1 ateezPlaylist = new MusicPlaylist1(dripAteez);
+
+        Song wonderlandAteez = new Song("Wonderland", "Ateez");
+        ateezPlaylist.enqueueSong(wonderlandAteez);
+
+        MusicPlaylist1 expected = new MusicPlaylist1(dripAteez,
+                wonderlandAteez);
+        assertEquals(expected, ateezPlaylist);
     }
 
     @Test
