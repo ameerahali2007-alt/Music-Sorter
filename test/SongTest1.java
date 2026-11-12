@@ -10,32 +10,34 @@ import org.junit.Test;
 public class SongTest1 {
 
 @Test
-public void enqueueSongTest1() { 
+public void enqueueSongTest1() {
     MusicPlaylist1 ateezPlaylist = new MusicPlaylist1();
     Song dripAteez = new Song("Drip", "Ateez");
     ateezPlaylist.enqueueSong(dripAteez);
 
 
-    MusicPlaylist1 expected = new MusicPlaylist1(new Song("Drip", "Ateez");  
-    assertEquals(expected, ateezPlaylist); 
+    MusicPlaylist1 expected = new MusicPlaylist1(new Song("Drip", "Ateez");
+    assertEquals(expected, ateezPlaylist);
     }
 
-@Test
-public void dequeueSongTest1() { 
-    MusicPlaylist1 ateezPlaylist = new MusicPlaylist1(new Song("Drip", "Ateez"));
-    Song dripAteez = ateezPlaylist.dequeueSong();
+    @Test
+    public void dequeueSongTest1() {
+        MusicPlaylist1 ateezPlaylist = new MusicPlaylist1(
+                new Song("Drip", "Ateez"));
+        Song dripAteez = ateezPlaylist.dequeueSong();
 
-    MusicPlaylist1 expected = new MusicPlaylist1();  
-    assertEquals(expected, ateezPlaylist); 
-}
+        MusicPlaylist1 expected = new MusicPlaylist1();
+        assertEquals(expected, ateezPlaylist);
+    }
 
-@Test
-public void lengthSongTest1() { 
-    MusicPlaylist1 ateezPlaylist = new MusicPlaylist1(new Song("Drip", "Ateez"));
-    int actualLength = ateezPlaylist.lengthSong();
+    @Test
+    public void lengthSongTest1() {
+        MusicPlaylist1 ateezPlaylist = new MusicPlaylist1(
+                new Song("Drip", "Ateez"));
+        int actualLength = ateezPlaylist.lengthSong();
 
-    int expectedLength = 1;  
-    assertEquals(expectedLength, actualLength); 
-}
+        int expectedLength = 1;
+        assertEquals(expectedLength, actualLength);
+    }
 
 }

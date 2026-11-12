@@ -28,31 +28,47 @@ public class MusicPlaylistMain1 {
         playlist.enqueueSong(new Song("Movin'on without you", "Hikaru Utada"));
         playlist.enqueueSong(new Song("Automatic", "Hikaru Utada"));
 
-
         String nextMove = "";
-        
+
         while (!nextMove.equals("exit")) {
-            out.println("What would you like to do next? (add, remove, view, length, exit)");
+            out.println(
+                    "What would you like to do next? (add, remove, view, length, exit)");
             nextMove = in.nextLine();
 
             if (nextMove.equals("add")) {
+                //Add a song to the playlist
                 out.println("Please enter the song you would like to add: ");
-                Song newSong = in.nextLine();
-                playlist.enqueueSong(newSong);
+                String newSong = in.nextLine();
+
+                out.println(
+                        "Please enter the artist of the song you would like to add: ");
+                String newSongArtist = in.nextLine();
+                Song newSongAdded = new Song(newSong, newSongArtist);
+                playlist.enqueueSong(newSongAdded);
+
             } else if (nextMove.equals("remove")) {
-                Song removedSong = playlist.dequeueSong();
-                out.println("Removed song: " + removedSong);
+                //Remove a song from the playlist
+                if (playlist.length() == 0) {
+                    out.println("The playlist is empty. No song to remove.");
+                } else {
+                    Song removedSong = playlist.dequeueSong();
+                    out.println("Removed song: " + removedSong);
+                }
             } else if (nextMove.equals("view")) {
+                //View the current playlist
                 out.println("Current playlist: ");
                 for (int i = 0; i < playlist.length(); i++) {
                     Song currectSong = playlist.dequeueSong();
                     out.println(currectSong);
                     playlist.enqueueSong(currectSong);
                 }
+
             } else if (nextMove.equals("length")) {
                 out.println("Current playlist length: " + playlist.length());
+
             } else if (!nextMove.equals("exit")) {
-                out.println("Thank you for using the City Pop Playlist. Goodbye!");
+                out.println(
+                        "Thank you for using the City Pop Playlist. Goodbye!");
             }
         }
     }
