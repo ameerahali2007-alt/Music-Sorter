@@ -5,7 +5,7 @@ import java.util.Comparator;
  * MusicPlaylistStandard.
  *
  */
-public interface MusicPlaylist extends MusicPlaylistKernel {
+public interface MusicPlaylist extends MusicPlaylistKernel<Song> {
 
     /**
      * Flips the order of the songs in the given playlist.
