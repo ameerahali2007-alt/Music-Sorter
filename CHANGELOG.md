@@ -61,6 +61,9 @@ the following form: YYYY.0M.0D.
 - Created a new test file.
 
 
+## [2026.11.12]
+- Fixed a few bugs in the main that deault with view.
+
 ## [2026.01.07]
 
 ### Fixed

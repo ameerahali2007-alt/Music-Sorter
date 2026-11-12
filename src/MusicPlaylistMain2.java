@@ -49,8 +49,10 @@ public class MusicPlaylistMain2 {
                 }
             } else if (nextMove.equals("view")) {
                 out.println("Current playlist: ");
-                for (Song song : playlist) {
-                    out.println(song);
+                for (int i = 0; i < playlist.length(); i++) {
+                    Song currectSong = playlist.dequeueSong();
+                    out.println(currectSong);
+                    playlist.enqueueSong(currectSong);
                 }
             } else if (nextMove.equals("length")) {
                 out.println("Current playlist length: " + playlist.length());
