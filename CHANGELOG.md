@@ -6,20 +6,64 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Calendar Versioning](https://calver.org/) of
 the following form: YYYY.0M.0D.
 
-## [Unreleased]
 
-- Fixed an issue where the course URLs dropped the `web-sw1` paths
-
-## [2026.07.06]
+## [2026.10.24]
 
 ### Added
+- Designed a music sorter component
 
-- Added an AGENTS.md file
-- Added simplified DIRECTIONS.md file
 
-### Removed
+## [2026.10.27]
 
-- Removed TODO tree extension and replaced with fork
+### Added
+- Created 4 files
+  - The Music Sorter
+  - Music Sorter Kernel
+  - Standard
+
+### Updated
+- MusicPlaylistKernel:
+  - Added length()
+  - enqueueSong()
+  - dequeueSong()
+
+
+## [2026.10.28]
+
+### Added
+- Music Playlist Secondary file
+- Added to the Secondary:
+  - Flip
+  - Front
+  - Sort
+  - replaceFront
+
+### Updated
+- Updated code inside Front, replaceFront, and Sort
+- Adding the methods to the Standard
+
+## Fixed
+- Fixed the code in Secondary
+- Renaming files (standard = MusicPlaylist)
+
+## [2026.10.28]
+
+## Added
+- MusicPlaylist1:
+  - enqueueSong
+  - dequeueSong
+  - length
+  - clear
+  - MusicPlaylist
+
+- Created a Song object, stores title and artist.
+
+- Created a new test file.
+
+
+## [2026.11.12]
+- Fixed a few bugs in the main that deault with view.
+- Fixing bugs with the test and main.
 
 ## [2026.01.07]
 
