@@ -41,4 +41,5 @@
     "markdown-pdf.outputDirectory": "",
     "markdown-pdf.highlightStyle": "a11y-light.css",
     "print.sourcecode.colourScheme": "A11 Y",
+    "java.debug.settings.onBuildFailureProceed": true,
 }

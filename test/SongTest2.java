@@ -3,14 +3,14 @@ import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 
 /**
- * JUnit test fixture for  MusicPlaylistSecondary.
+ * JUnit test fixture for MusicPlaylistSecondary.
  *
  *
  */
 public class SongTest2 {
 
     @Test
-    public void flipListTest1() { 
+    public void flipListTest1() {
         MusicPlaylist1 ateezPlaylist = new MusicPlaylist1();
         Song dripAteez = new Song("Drip", "Ateez");
         Song halaziaAteez = new Song("Halazia", "Ateez");
@@ -23,11 +23,11 @@ public class SongTest2 {
         expected.enqueueSong(halaziaAteez);
         expected.enqueueSong(dripAteez);
 
-        assertEquals(expected, ateezPlaylist); 
+        assertEquals(expected, ateezPlaylist);
     }
 
     @Test
-    public void frontOfListTest1() { 
+    public void frontOfListTest1() {
         MusicPlaylist1 ateezPlaylist = new MusicPlaylist1();
         Song dripAteez = new Song("Drip", "Ateez");
         Song halaziaAteez = new Song("Halazia", "Ateez");
@@ -37,7 +37,7 @@ public class SongTest2 {
         Song frontSong = ateezPlaylist.frontOfList();
 
         Song expected = dripAteez;
-        assertEquals(expected, frontSong); 
+        assertEquals(expected, frontSong);
     }
 
     @Test
@@ -50,8 +50,8 @@ public class SongTest2 {
         ateezPlaylist.replaceFront(halaziaAteez);
 
         MusicPlaylist1 expected = new MusicPlaylist1();
-        expected.enqueueSong(halaziaAteez); 
+        expected.enqueueSong(halaziaAteez);
 
         assertEquals(expected, ateezPlaylist);
-    }   
-}   
+    }
+}

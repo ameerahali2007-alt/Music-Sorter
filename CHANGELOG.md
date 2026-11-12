@@ -63,6 +63,7 @@ the following form: YYYY.0M.0D.
 
 ## [2026.11.12]
 - Fixed a few bugs in the main that deault with view.
+- Fixing bugs with the test and main.
 
 ## [2026.01.07]
 
